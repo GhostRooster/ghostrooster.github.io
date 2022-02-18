@@ -16,7 +16,7 @@
     		<script>
         		function changeImage() {
            		 var image = document.getElementById('myImage');
-				if(document.getElementById("inpt").value == "hotdog" || document.getElementById("inpt").value == "hot dog") {
+				if(document.getElementById("inpt").toLowercase().value == "hotdog" || document.getElementById("inpt").toLowercase().value == "hot dog") {
 					alert("You win. Naisu!");
 					image.src = "wordraw5.png";
 				}
