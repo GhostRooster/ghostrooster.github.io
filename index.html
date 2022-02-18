@@ -7,7 +7,6 @@
 			<meta name="description" content="Wordraw">
 			<meta name="author" content="GhostRooster">
 			<title>Wordraw</title>
-			<link rel="stylesheet" href="styles.css">
 		</head>
 		<body>
 			<h1>Wordraw</h1>
@@ -17,7 +16,7 @@
     		<script>
         		function changeImage() {
            		 var image = document.getElementById('myImage');
-				if(document.getElementById("inpt").value == "hotdog") {
+				if(document.getElementById("inpt").value == "hotdog" || document.getElementById("inpt").value == "hot dog") {
 					alert("You win. Naisu!");
 					image.src = "wordraw5.png";
 				}
@@ -37,7 +36,7 @@
             	    image.src = "wordraw5.png";
          	     }
 				 else if (image.src.match("wordraw5.png")) {
-            	    alert("The image was hotdog");
+            	    alert("The image was hotdog/hot dog");
          	     }
      	  	 }
   			</script>
