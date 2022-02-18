@@ -81,7 +81,16 @@
   			</script>
 		    <p style="font-family:sans-serif; font-weight: 700; font-size: 15px; margin:10px; padding:0px">Enter guess:</p>
 			<input style="margin-bottom: 10px" id="inpt" type="text"></input>
-			<input type="button" onclick="changeImage()" value="Guess" />	
+			<input id="buttone" type="button" onclick="changeImage()" value="Guess" />	
+			<script>
+				var input = document.getElementById("inpt");
+				input.addEventListener("keyup", function(event) {
+				  if (event.keyCode === 13) {
+				   event.preventDefault();
+				   document.getElementById("buttone").click();
+				  }
+				});
+				</script>
 	</main>
 	</body>
 </html>
