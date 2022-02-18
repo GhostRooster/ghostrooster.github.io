@@ -15,10 +15,10 @@
 			}
 			
 			.bar1, .bar2, .bar3 {
-			  width: 35px;
-			  height: 5px;
+			  width: 30px;
+			  height: 4px;
 			  background-color: rgb(255, 255, 255);
-			  margin: 6px 0;
+			  margin: 4px 0;
 			  transition: 0.4s;
 			}
 			
@@ -35,6 +35,7 @@
 			}
 			</style>
 		<body style="background-color:rgb(19, 19, 19); text-align:center;color:white">
+			<div style="height:30px">
 			<div class="container" onclick="myFunction(this)" style="float: left;">
 				<div class="bar1" ></div>
 				<div class="bar2"></div>
@@ -45,7 +46,8 @@
 				  x.classList.toggle("change");
 				}
 				</script>
-			<p style="font-family:sans-serif; font-weight: 700; font-size: 4vw; margin:0px; padding:0px">Wordraw - Guess The Image!</p>
+			<p style="font-family:sans-serif; font-weight: 700; font-size: 25px; margin:0px; padding:0px">Wordraw - Guess The Image!</p>
+		    </div>
 			<hr class="solid" color="grey">
 			<p style="font-family:sans-serif; font-weight: 700; font-size: 15px; margin:10px; padding:0px">Note: Beginning starts with a blank canvas. Take a guess!</p>
 			<img src="wordraw0.png" style="border: 5px solid #555; max-width:50%; height:auto" id="myImage" width="500" height="500">
