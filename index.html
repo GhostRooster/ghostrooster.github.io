@@ -55,9 +55,9 @@
     		<script>
         		function changeImage() {
            		 var image = document.getElementById('myImage');
-				if(document.getElementById("inpt").value.toLowerCase() == "hotdog" || document.getElementById("inpt").value.toLowerCase() == "hot dog") {
+				if(document.getElementById("inpt").value.toLowerCase() == "ufo" || document.getElementById("inpt").value.toLowerCase() == "unidentified flying object") {
 					alert("You win. Naisu!");
-					image.src = "wordraw5.png";
+					image.src = "wordraw7.png";
 				}
            		else if (image.src.match("wordraw0.png")) {
             	    image.src = "wordraw1.png";
@@ -75,6 +75,12 @@
             	    image.src = "wordraw5.png";
          	     }
 				 else if (image.src.match("wordraw5.png")) {
+            	    image.src = "wordraw6.png";
+         	     }
+				  else if (image.src.match("wordraw6.png")) {
+            	    image.src = "wordraw7.png";
+         	     }
+				  else if (image.src.match("wordraw7.png")) {
             	    alert("The image was hotdog/hot dog");
          	     }
      	  	 }
